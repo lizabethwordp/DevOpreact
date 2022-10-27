@@ -15,10 +15,28 @@ pipeline {
         stage("Build"){
             steps {
                 script{
-                    sh "pwd"
+                    
                     sh "npm install"
                 }
             }
         }
+        stage("Build image"){
+            steps{
+                script{
+                    sh "docker build -t lizdockerhub/lizreactapp ."
+                }
+            }
+
+        }
+         stage("Push image"){
+            steps{
+                script{
+                    sh "docker login -u ${env.username} -p ${env.password}"
+                    sh "docker push lizdockerhub/lizreactapp"
+                }
+            }
+
+        }
+
     }
 }

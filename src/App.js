@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route exact path='/home' element = {<Homepage />} />
           <Route exact path='/about' element = {<Aboutus />} />
-          <Route exact path='/c' element = {<CreateAcc />} />
+          <Route exact path='/createacc' element = {<CreateAcc />} />
           <Route exact path='/login' element = {<Login />} />
           <Route path='*' element = {<PagenotFound/>} />
           
