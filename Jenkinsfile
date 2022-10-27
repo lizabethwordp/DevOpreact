@@ -3,6 +3,15 @@ pipeline {
     agent any
 
     stages {
+        stage('Initial_cleanup'){
+            steps {
+
+                dir ("${WORKSPACE}"){
+                    deleteDir()
+                }
+                
+            }
+        }
         stage('checkout'){
             steps {
 
@@ -28,11 +37,19 @@ pipeline {
             }
 
         }
-         stage("Push image"){
+        stage("Push image"){
             steps{
                 script{
                     sh "docker login -u ${env.username} -p ${env.password}"
                     sh "docker push lizdockerhub/lizreactapp"
+                }
+            }
+
+        }
+         stage("Docker logout"){
+            steps{
+                script{
+                    sh "docker logout"
                 }
             }
 
