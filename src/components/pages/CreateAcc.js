@@ -1,12 +1,5 @@
 import React from 'react'
 
-// function  Contactus() {
-//   return (
-//     <div>
-      
-//     </div>
-//   )
-// }
 
 const CreateAcc = () => {
     return(
