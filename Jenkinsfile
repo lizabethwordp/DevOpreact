@@ -33,8 +33,8 @@ pipeline {
         stage("Build image"){
             steps{
                 script{
-                    sh "cd DevOpreact"
-                    sh "docker build -t lizdockerhub/lizreactapp ."
+                    sh "cd DevOpreact && docker build -t lizdockerhub/lizreactapp ."
+                    
                 }
             }
 
