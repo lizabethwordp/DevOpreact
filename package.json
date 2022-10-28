@@ -1,5 +1,6 @@
 {
-  "name": "DevOpreact",
+  "name": "devopreact",
+  "forceConsistentCasingInFileNames": false,
   "version": "0.1.0",
   "private": true,
   "dependencies": {
