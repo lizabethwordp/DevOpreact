@@ -24,7 +24,7 @@ pipeline {
         stage("Build"){
             steps {
                 script{
-                    
+                    sh "cd DevOpsprac"
                     sh "npm install"
                 }
             }
@@ -32,6 +32,7 @@ pipeline {
         stage("Build image"){
             steps{
                 script{
+                    sh "cd DevOpsprac"
                     sh "docker build -t lizdockerhub/lizreactapp ."
                 }
             }
