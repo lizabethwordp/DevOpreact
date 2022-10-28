@@ -26,6 +26,7 @@ pipeline {
                 script{
                     sh "pwd && ls"
                     sh "cd DevOpreact && npm install"
+                    sh "echo ${USER}"
                     
                 }
             }
