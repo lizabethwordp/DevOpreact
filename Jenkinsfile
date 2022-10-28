@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script{
                     sh "pwd && ls"
-                    sh "cd DevOpreact"
+                    sh "cd DevOpreact && ls"
                     sh "npm install"
                 }
             }
