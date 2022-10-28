@@ -24,7 +24,7 @@ pipeline {
         stage("Build"){
             steps {
                 script{
-                    sh "pwd"
+                    sh "pwd && ls"
                     sh "npm install"
                 }
             }
