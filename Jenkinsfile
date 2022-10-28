@@ -24,8 +24,7 @@ pipeline {
         stage("Build"){
             steps {
                 script{
-                    sh "pwd"
-                    sh "ls"
+                    sh "cd DevOpreact"
                     sh "npm install"
                 }
             }
@@ -33,7 +32,7 @@ pipeline {
         stage("Build image"){
             steps{
                 script{
-                    sh "cd DevOpsprac"
+                    sh "cd DevOpreact"
                     sh "docker build -t lizdockerhub/lizreactapp ."
                 }
             }

@@ -1,5 +1,5 @@
 import './App.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import Homepage from './components/pages/Homepage';
 import Aboutus from './components/pages/Aboutus';
 import CreateAcc from './components/pages/CreateAcc';
