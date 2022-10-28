@@ -8,7 +8,7 @@ const Aboutus = () => {
       <div>
         <section id='about'>
          <h5 className='about_title'>Get to Know</h5>
-         <h1>About Me</h1>
+         <h1>About Us</h1>
   
          <div className='container about__container'>
           <div className='about_me'>
