@@ -24,7 +24,8 @@ pipeline {
         stage("Build"){
             steps {
                 script{
-                    sh "cd DevOpsprac"
+                    sh "pwd"
+                    sh "ls"
                     sh "npm install"
                 }
             }
