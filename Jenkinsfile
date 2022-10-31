@@ -24,7 +24,7 @@ pipeline {
         stage("Build"){
             steps {
                 script{
-                    sh "pwd && ls"
+                    
                     sh "cd DevOpreact && npm install"
                    
                     
